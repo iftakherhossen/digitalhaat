@@ -1,0 +1,26 @@
+.haat-bg-info{
+    background-color: #c4f5d4;
+    width: 83%;
+    margin: auto;
+}
+.categories img{
+    width: 100px;
+}
+.haat-btn-buy-now{
+    background-image: linear-gradient(to bottom, #df968c 0%, 
+    #ff3434 100%);
+    color: white;
+    border-radius: 8px;
+    padding: 9px 25px;
+    border: none;
+    margin-top: 10px;
+}
+.haat-a {
+    text-decoration: none;
+}
+.ms-n1 {
+    margin-left: -3.1rem !important;
+}
+.br-25 {
+    border-radius: 25px;
+}
