@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon Link -->
+    <link rel="icon" href="images/fav.png" type="image/gif">
     <!-- Bootstrap CSS Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- Font Awesome Link -->
-    <script src="https://kit.fontawesome.com/f7d5949a35.js" crossorigin="anonymous"></script>
     <!-- External CSS Link -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>ডিজিটাল হাট - স্বাগতম</title>
@@ -119,6 +119,8 @@
                     aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
                     aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active my-3">
@@ -160,16 +162,28 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item mt-2">
+                <div class="carousel-item my-3">
                     <div class="row px-5 py-4 haat-bg-info bg-gradient d-flex align-items-center">
                         <div class="col-lg-7 ps-5">
                             <h1>দেশী/বিদেশী ভেড়া</h1>
-                            <p>আমাদের নিজস্ব ফার্মে লালিত দেশী/বিদেশী ভেড়া সুলভ মুল্যে <a href=""
+                            <p>আমাদের নিজস্ব ফার্মে লালিত দেশী/বিদেশী ভেড়া সুলভ মুল্যে <a href="#sheep"
                                     class="haat-a">বিস্তারিত</a></p>
                             <button class="haat-btn-buy-now">এখনই কিনুন</button>
                         </div>
                         <div class="col-lg-5">
                             <img src="images/sheep/sheep-4.png" class="d-block" alt="Slide" width="390px">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item my-3">
+                    <div class="row px-5 py-4 haat-bg-info bg-gradient d-flex align-items-center">
+                        <div class="col-lg-6 ps-5">
+                            <h1 class="fw-bold">ঈদ মোবারাক</h1>
+                            <h4>সবাইকে পবিত্র ঈদুল আযহার শুভেচ্ছা...</h4>
+                            <button class="haat-btn-buy-now" title="ঈদ উপহার পেতে এখানে কিল্ক করুন">ঈদ উপহার</button>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="images/slider.png" class="d-block my-3" alt="Slide" style="width:500px;">
                         </div>
                     </div>
                 </div>
@@ -225,7 +239,7 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 py-5">
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100">
-                        <img src="images/cows/cow-3.png" class="card-img-top px-4 pt-3" alt="cow">
+                        <img src="images/cows/cow-3.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">অস্ট্রেলিয়ান গরু</h4>
                             <h5 class="card-text text-danger fw-bold">৭০০০০৳</h5>
@@ -239,7 +253,7 @@
                 </div>
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100">
-                        <img src="images/cows/cow-4.png" class="card-img-top px-4 pt-3" alt="cow">
+                        <img src="images/cows/cow-4.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">ইন্ডিয়ান গরু</h4>
                             <h5 class="card-text text-danger fw-bold">৮৫০০০৳</h5>
@@ -253,7 +267,7 @@
                 </div>
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100">
-                        <img src="images/cows/cow-5.png" class="card-img-top px-4 pt-3" alt="cow">
+                        <img src="images/cows/cow-5.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">অস্ট্রেলিয়ান গরু</h4>
                             <h5 class="card-text text-danger fw-bold">৬৯০০০৳</h5>
@@ -267,7 +281,7 @@
                 </div>
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100">
-                        <img src="images/cows/cow-6.png" class="card-img-top px-4 pt-3" alt="cow">
+                        <img src="images/cows/cow-6.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">দেশী গরু</h4>
                             <h5 class="card-text text-danger fw-bold">৬২০০০৳</h5>
@@ -281,7 +295,7 @@
                 </div>
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100">
-                        <img src="images/cows/cow-7.png" class="card-img-top px-4 pt-3" alt="cow">
+                        <img src="images/cows/cow-7.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">অস্ট্রেলিয়ান গরু</h4>
                             <h5 class="card-text text-danger fw-bold">৭৭০০০৳</h5>
@@ -295,7 +309,7 @@
                 </div>
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100">
-                        <img src="images/cows/cow-8.png" class="card-img-top px-4 pt-3" alt="cow">
+                        <img src="images/cows/cow-8.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">ইন্ডিয়ান গরু</h4>
                             <h5 class="card-text text-danger fw-bold">৭৬০০০৳</h5>
@@ -316,7 +330,7 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 py-5">
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100">
-                        <img src="images/goats/goat-6.png" class="card-img-top px-4 pt-3" alt="cow">
+                        <img src="images/goats/goat-6.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">দেশি ছাগল</h4>
                             <h5 class="card-text text-danger fw-bold">১৮০০০৳</h5>
@@ -330,7 +344,7 @@
                 </div>
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100">
-                        <img src="images/goats/goat-5.png" class="card-img-top px-4 pt-3" alt="cow">
+                        <img src="images/goats/goat-5.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">রাম ছাগল</h4>
                             <h5 class="card-text text-danger fw-bold">১৬০০০৳</h5>
@@ -344,7 +358,7 @@
                 </div>
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100">
-                        <img src="images/goats/goat-4.png" class="card-img-top px-4 pt-3" alt="cow">
+                        <img src="images/goats/goat-4.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">দেশি ছাগল</h4>
                             <h5 class="card-text text-danger fw-bold">১৪৫০০৳</h5>
@@ -358,7 +372,7 @@
                 </div>
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100">
-                        <img src="images/goats/goat-3.png" class="card-img-top px-4 pt-3" alt="cow">
+                        <img src="images/goats/goat-3.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">দেশী ছাগল</h4>
                             <h5 class="card-text text-danger fw-bold">১২০০০৳</h5>
@@ -372,7 +386,7 @@
                 </div>
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100">
-                        <img src="images/goats/goat-8.png" class="card-img-top px-4 pt-3" alt="cow">
+                        <img src="images/goats/goat-8.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">রাম ছাগল</h4>
                             <h5 class="card-text text-danger fw-bold">১০০০০৳</h5>
@@ -386,7 +400,7 @@
                 </div>
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100">
-                        <img src="images/goats/goat-7.png" class="card-img-top px-4 pt-3" alt="cow">
+                        <img src="images/goats/goat-7.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">রাম ছাগল</h4>
                             <h5 class="card-text text-danger fw-bold">১৭০০০৳</h5>
@@ -407,7 +421,7 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 py-5">
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100">
-                        <img src="images/camels/camel-3.png" class="card-img-top px-4 pt-3" alt="cow">
+                        <img src="images/camels/camel-3.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">এরাবিয়ান উট</h4>
                             <h5 class="card-text text-danger fw-bold">১৭৫০০০০৳</h5>
@@ -421,7 +435,7 @@
                 </div>
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100">
-                        <img src="images/camels/camel-4.png" class="card-img-top px-4 pt-3" alt="cow">
+                        <img src="images/camels/camel-4.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">এরাবিয়ান উট</h4>
                             <h5 class="card-text text-danger fw-bold">১৬৯০০০০৳</h5>
@@ -435,7 +449,7 @@
                 </div>
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100">
-                        <img src="images/camels/camel-5.png" class="card-img-top px-4 pt-3" alt="cow">
+                        <img src="images/camels/camel-5.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">ইন্ডিয়ান উট</h4>
                             <h5 class="card-text text-danger fw-bold">১৩৫০০০০৳</h5>
@@ -449,7 +463,7 @@
                 </div>
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100">
-                        <img src="images/camels/camel-6.png" class="card-img-top px-4 pt-3" alt="cow">
+                        <img src="images/camels/camel-6.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">সৌদি উট</h4>
                             <h5 class="card-text text-danger fw-bold">১৬৫০০০০৳</h5>
@@ -463,7 +477,7 @@
                 </div>
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100">
-                        <img src="images/camels/camel-2.png" class="card-img-top px-4 pt-3" alt="cow">
+                        <img src="images/camels/camel-2.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">ডুবাই উট</h4>
                             <h5 class="card-text text-danger fw-bold">১২০০০০৳</h5>
@@ -477,7 +491,7 @@
                 </div>
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100">
-                        <img src="images/camels/camel-7.png" class="card-img-top px-4 pt-3" alt="cow">
+                        <img src="images/camels/camel-7.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">ইন্ডিয়ান উট</h4>
                             <h5 class="card-text text-danger fw-bold">১৭০০০০৳</h5>
@@ -498,7 +512,7 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 py-5">
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100">
-                        <img src="images/sheep/sheep-1.png" class="card-img-top px-4 pt-3" alt="sheep">
+                        <img src="images/sheep/sheep-1.png" class="card-img-top px-4 pt-3 img-animation" alt="sheep">
                         <div class="card-body mt-1">
                             <h4 class="card-title">দেশি ভেড়া</h4>
                             <h5 class="card-text text-danger fw-bold">১২০০০৳</h5>
@@ -512,10 +526,10 @@
                 </div>
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100">
-                        <img src="images/sheep/sheep-2.png" class="card-img-top px-4 pt-3" alt="sheep">
+                        <img src="images/sheep/sheep-2.png" class="card-img-top px-4 pt-3 img-animation" alt="sheep">
                         <div class="card-body mt-1">
                             <h4 class="card-title">দেশি ভেড়া</h4>
-                            <h5 class="card-text text-danger fw-bold">১৫০০০৳</h5>
+                            <h5 class="card-text text-danger fw-bold">১৩০০০৳</h5>
                             <a href="#" class="text-success haat-a fw-bold">বিস্তারিত দেখুন...</a>
                         </div>
                         <div class="m-3 d-flex justify-content-evenly">
@@ -526,10 +540,10 @@
                 </div>
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100">
-                        <img src="images/sheep/sheep-3.png" class="card-img-top px-4 pt-3" alt="sheep" height="278">
+                        <img src="images/sheep/sheep-3.png" class="card-img-top px-4 pt-3 img-animation" alt="sheep" height="278">
                         <div class="card-body mt-1">
                             <h4 class="card-title">দেশি ভেড়া</h4>
-                            <h5 class="card-text text-danger fw-bold">১০০০০৳</h5>
+                            <h5 class="card-text text-danger fw-bold">১৬৫০০৳</h5>
                             <a href="#" class="text-success haat-a fw-bold">বিস্তারিত দেখুন...</a>
                         </div>
                         <div class="m-3 d-flex justify-content-evenly">
@@ -542,23 +556,56 @@
         </section>
         <!-- Sheep Section End -->
 
-        <!-- Eid Wish banner -->
-        <div class="container">
-            <img src="images/eid-wish.jpg" class="w-100" alt="Eid Wish">
-        </div>
-        <!-- Eid Wish banner -->
+        <!-- Contact Section Start -->
+        <section class="container" id="contact">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-5 border-0 shadow pt-3 pb-2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14602.700311872784!2d90.34510366942551!3d23.794582086915813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0e96fce29dd%3A0x6ccd9e51aba9e64d!2sMirpur-1%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1627472359467!5m2!1sen!2sbd" width="450" height="390" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-12 col-md-6 border-0 shadow ms-4 p-3">
+                    <h3 class="pt-3 px-3">অভিযোগ বা পরামর্শ থাকলে আমাদেরকে জানান</h3>
+                    <form class="pt-3 px-3">
+                        <input class="form-control mb-3" id="exampleFormControlInput1" type="email" placeholder="ইমেইল আইডি লেখুন">
+                        <select class="form-select mb-3" aria-label="Problem Select">
+                            <option selected class="btn-success">সমস্যা নির্বাচন করুন</option>
+                            <option value="1" class="btn-success">অভিযোগ</option>
+                            <option value="2" class="btn-success">পরামর্শ</option>
+                            <option value="3" class="btn-success">অর্ডার ডিটেইলস পরিবর্তন</option>
+                        </select>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea><br>
+                        <button class="btn btn-success" type="submit">সেন্ড করুন</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-12 d-flex flex-column justify-content-center align-items-center mb-2">
+                <div class="fs-2 mt-4 shadow px-4 py-2 border border-4 border-success rounded-pill">
+                    <a href="https://www.facebook.com/hosseniftakher" class="text-success text-decoration-none"><i class="fab fa-facebook mx-1"></i></a>
+                    <a href="https://www.instagram.com/hossen_iftakher/" class="text-success text-decoration-none"><i class="fab fa-instagram mx-1"></i></a>
+                    <a href="https://twitter.com/iftakher_hossen" class="text-success text-decoration-none"><i class="fab fa-twitter mx-1"></i></a>
+                    <a href="https://www.linkedin.com/in/iftakher-hossen/" class="text-success text-decoration-none"><i class="fab fa-linkedin-in mx-1"></i></a>
+                    <a href="mailto:iftakher.one@gmail.com" class="text-success text-decoration-none"><i class="far fa-envelope"></i></a><br>
+                    <div class="text-center fs-6 fw-bold py-2"><i class="fas fa-mobile-alt text-success"></i> +৮৮০৯৬৩৮১৭৯৪৩০</div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section End -->
     </main>
     <!-- KP-Page Main Section End -->
 
     <!-- Footer Section Start -->
-    <footer>
-        <p class="mt-2 text-center">©২০২১, ডিজিটাল হাট, সর্বাধিকার সংরক্ষিত, ইফতেখার হোসেন, বাংলাদেশ।</p>
+    <footer class="mt-5">
+        <p class="mt-2 text-center">©২০২১, ডিজিটাল হাট, সর্বাধিকার সংরক্ষিত, <a href="https://iftakherhossen.github.io/portfolio/index.html" class="text-decoration-none text-success">ইফতেখার হোসেন</a>, বাংলাদেশ।</p>
     </footer>
     <!-- Footer Section End -->
 
 
     <!-- Bootstrap JS Bundle Link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome Link -->
+    <script src="https://kit.fontawesome.com/f7d5949a35.js" crossorigin="anonymous"></script>
+
 
 </body>
 
