@@ -1,11 +1,30 @@
+@import url('https://fonts.maateen.me/charu-chandan-3d/font.css');
+@import url('https://cdn.rawgit.com/sh4hids/bangla-web-fonts/charukola-reguler-unicode/stylesheet.css');
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-family: 'CharuChandan3D', 'sans-serif' !important;
+    font-size: 3em;
+}
+
+body{
+    font-family: 'Charukola Unicode' !important;
+    font-weight: bolder;
+}
+
 .haat-bg-info{
     background-color: #c4f5d4;
     width: 83%;
     margin: auto;
 }
+
 .categories img{
     width: 100px;
 }
+
 .haat-btn-buy-now{
     background-image: linear-gradient(to bottom, #df968c 0%, 
     #ff3434 100%);
@@ -14,17 +33,38 @@
     padding: 9px 25px;
     border: none;
     margin-top: 10px;
+    font-size: 1.1em;
 }
+
 .haat-a {
     text-decoration: none;
 }
+
 .ms-n1 {
     margin-left: -3.1rem !important;
 }
+
 .br-25 {
     border-radius: 25px;
 }
+
 .card:hover .img-animation {
     transform: scale(0.9);
-    transition: 2s ease-in-out;
+    transition: 3s ease-in-out;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+.custom:hover {
+    color: firebrick !important;
+}
+
+.custom-font {
+    font-size: 1.1em;
+}
+
+.custom-hr {
+    color: #ff3434;
 }

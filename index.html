@@ -17,6 +17,8 @@
 
 <body>
 
+    
+
     <!-- Header Section Start -->
     <header>
         <!-- Navbar Section Start -->
@@ -31,70 +33,77 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size:19px; font-weight:700;">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-success" style="font-size:22px; font-weight:700;">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">হোম</a>
+                            <a class="nav-link active text-success custom" aria-current="page" href="index.html">হোম</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#kp-container" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle text-success custom" href="#kp-container"
+                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 কোরবানির পশু
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#cow">গরু</a></li>
-                                <li><a class="dropdown-item" href="#goat">ছাগল</a></li>
-                                <li><a class="dropdown-item" href="#camel">উট</a></li>
-                                <li><a class="dropdown-item" href="#sheep">ভেড়া</a></li>
+                                <li><a class="dropdown-item custom fs-5 fw-bold" href="#cow">গরু</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item custom fs-5 fw-bold" href="#goat">ছাগল</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item custom fs-5 fw-bold" href="#camel">উট</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item custom fs-5 fw-bold" href="#sheep">ভেড়া</a></li>
                             </ul>
                         <li class="nav-item">
-                            <a class="nav-link" href="#butler">কসাই</a>
+                            <a class="nav-link text-success custom" href="#butler">কসাই</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">যোগাযোগ</a>
+                            <a class="nav-link text-success custom" href="#contact">যোগাযোগ</a>
                         </li>
                         </li>
                     </ul>
                     <form class="d-flex">
                         <input class="form-control me-2 br-25" type="search" placeholder="এখানে খুজুন..."
                             aria-label="Search" style="width:320px;">
-                        <button class="btn btn-outline-success ms-n1 br-25" type="submit"><i class="fas fa-search"></i></button>
+                        <button class="btn btn-outline-success ms-n1 br-25" type="submit"><i
+                                class="fas fa-search"></i></button>
                     </form>
 
                     <!-- Cart Section Start -->
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                        <i class="fas fa-shopping-cart p-1" style="font-size:30px; color:green;"></i>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fas fa-shopping-cart p-1 custom" style="font-size:30px; color:green;"
+                            title="কার্ট"></i>
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal fade" id="exampleModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="staticBackdropLabel">কার্ট - লগইন/সাইন ইন</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <h5 class="modal-title fw-bold" id="staticBackdropLabel">কার্ট - লগইন/সাইন ইন</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <div class="p-2 d-flex flex-column align-items-center">
-                                        <input type="email" class="form-control w-75" id="exampleInputEmail1"
-                                            aria-describedby="emailHelp" placeholder="ইমেইল/নাম্বার"><br>
-                                        <input type="password" class="form-control w-75" id="exampleInputPassword1"
-                                            placeholder="পাসওয়ার্ড"><br>
-                                        <button type="submit" class="btn btn-primary">লগইন</button>
-                                    </div>
-                                    <hr>
-                                    <div class="d-flex justify-content-evenly">
-                                        <a href="#" class="haat-a">
-                                            <div class="bg-success p-2 px-4 text-white br-25"><i class="fab fa-google"></i> &nbsp সাইন ইন উইথ গুগল</div>
-                                        </a>
-                                        <a href="#" class="haat-a">
-                                            <div class="bg-success p-2 px-4 text-white br-25"><i class="far fa-envelope"></i> &nbsp সাইন ইন উইথ ইমেইল</div>
-                                        </a>
+                                        <form class="container-fluid">
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ইমেইল/নাম্বার"><br>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="পাসওয়ার্ড"><br>
+                                            <div class="d-flex justify-content-center">
+                                                <button type="submit" class="btn btn-success mx-2">লগইন</button>
+                                                <button type="submit" class="btn btn-success mx-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">সাইন ইন
+                                                </button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="haat-a">
+                                            <div class="bg-success p-2 px-4 mx-1 text-white br-25 fw-light"><i class="fab fa-google"></i> &nbsp সাইন ইন উইথ গুগল</div>
+                                        </a>
+                                        <a href="#" class="haat-a">
+                                            <div class="bg-success p-2 px-4 mx-1 text-white br-25 fw-light"><i class="far fa-envelope"></i> &nbsp সাইন ইন উইথ ইমেইল</div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -102,7 +111,71 @@
                     <!-- Cart Section End -->
 
                     <!-- Login Button -->
-                    <i class="fas fa-user-circle p-1" style="font-size:35px; color:green;" title="লগইন/সাইন ইন"></i>
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <i class="fas fa-user-circle p-1 custom" style="font-size:35px; color:green;"
+                        title="লগইন/সাইন ইন"></i>
+                    </button>
+                    
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header pb-0">
+                            <h4 id="offcanvasRightLabel" class="fw-bold">লগইন/সাইন ইন</h4>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            লগইন
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <form class="container-fluid">
+                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                    placeholder="ইমেইল/নাম্বার" required><br>
+                                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="পাসওয়ার্ড" required>
+                                                <small><a href="#" class="text-danger float-end">পাসওয়ার্ড ভুলে গেছেন?</a></small>
+                                                <br>
+                                                <button type="submit" class="btn btn-success my-2">লগইন</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="true" aria-controls="collapseTwo">
+                                        সাইন ইন
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <form class="container-fluid">
+                                            <input type="text" class="form-control fw-bold" placeholder="নাম *" aria-label="Name" aria-describedby="basic-addon1" required><br>
+                                            <input type="email" class="form-control fw-bold" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ইমেইল *" required><br>
+                                            <input type="tel" class="form-control fw-bold" placeholder="নাম্বার *" aria-label="Number" aria-describedby="basic-addon1" required><br>
+                                            <input type="password" class="form-control fw-bold" id="exampleInputPassword1" placeholder="পাসওয়ার্ড *" required><br>
+                                            <input type="password" class="form-control fw-bold" id="exampleInputPassword1" placeholder="কনফার্ম পাসওয়ার্ড *" required><br>
+                                            <button type="submit" class="btn btn-success">সাইন ইন</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3 mb-0">
+                                <a href="#" class="haat-a mx-2">
+                                    <div class="bg-success p-2 px-4 text-white fs-6 br-25 fw-light text-center"><i class="fab fa-google"></i> &nbsp গুগল</div>
+                                </a>
+                                <a href="#" class="haat-a mx-2">
+                                    <div class="bg-success p-2 px-4 text-white fs-6 br-25 fw-light text-center"><i class="far fa-envelope"></i> &nbsp ইমেইল</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -126,8 +199,8 @@
                 <div class="carousel-item active my-3">
                     <div class="row px-5 py-4 haat-bg-info bg-gradient d-flex align-items-center">
                         <div class="col-lg-7 ps-5">
-                            <h1>দেশী/বিদেশী গরু</h1>
-                            <p>আমাদের নিজস্ব ফার্মে লালিত দেশী/বিদেশী গরু সুলভ মুল্যে <a href=""
+                            <h1>দেশী/ বিদেশী গরু</h1>
+                            <p>আমাদের নিজস্ব ফার্মে লালিত দেশী/বিদেশী গরু সুলভ মুল্যে <a href="#cow"
                                     class="haat-a">বিস্তারিত</a></p>
                             <button class="haat-btn-buy-now">এখনই কিনুন</button>
                         </div>
@@ -139,8 +212,8 @@
                 <div class="carousel-item my-3">
                     <div class="row px-5 py-4 haat-bg-info bg-gradient d-flex align-items-center">
                         <div class="col-lg-7 ps-5">
-                            <h1>দেশী/বিদেশী ছাগল</h1>
-                            <p>আমাদের নিজস্ব ফার্মে লালিত দেশী/বিদেশী ছাগল সুলভ মুল্যে <a href=""
+                            <h1>দেশী/ বিদেশী ছাগল</h1>
+                            <p>আমাদের নিজস্ব ফার্মে লালিত দেশী/বিদেশী ছাগল সুলভ মুল্যে <a href="#goat"
                                     class="haat-a">বিস্তারিত</a></p>
                             <button class="haat-btn-buy-now">এখনই কিনুন</button>
                         </div>
@@ -152,8 +225,8 @@
                 <div class="carousel-item my-3">
                     <div class="row px-5 py-4 haat-bg-info bg-gradient d-flex align-items-center">
                         <div class="col-lg-7 ps-5">
-                            <h1>দেশী/বিদেশী উট</h1>
-                            <p>আমাদের নিজস্ব ফার্মে লালিত দেশী/বিদেশী উট সুলভ মুল্যে <a href=""
+                            <h1>দেশী/ বিদেশী উট</h1>
+                            <p>আমাদের নিজস্ব ফার্মে লালিত দেশী/বিদেশী উট সুলভ মুল্যে <a href="#camel"
                                     class="haat-a">বিস্তারিত</a></p>
                             <button class="haat-btn-buy-now">এখনই কিনুন</button>
                         </div>
@@ -166,7 +239,7 @@
                     <div class="row px-5 py-4 haat-bg-info bg-gradient d-flex align-items-center">
                         <div class="col-lg-7 ps-5">
                             <h1>দেশী/বিদেশী ভেড়া</h1>
-                            <p>আমাদের নিজস্ব ফার্মে লালিত দেশী/বিদেশী ভেড়া সুলভ মুল্যে <a href="#sheep"
+                            <p>আমাদের নিজস্ব ফার্মে লালিত দেশী/ বিদেশী ভেড়া সুলভ মুল্যে <a href="#sheep"
                                     class="haat-a">বিস্তারিত</a></p>
                             <button class="haat-btn-buy-now">এখনই কিনুন</button>
                         </div>
@@ -178,8 +251,8 @@
                 <div class="carousel-item my-3">
                     <div class="row px-5 py-4 haat-bg-info bg-gradient d-flex align-items-center">
                         <div class="col-lg-6 ps-5">
-                            <h1 class="fw-bold">ঈদ মোবারাক</h1>
-                            <h4>সবাইকে পবিত্র ঈদুল আযহার শুভেচ্ছা...</h4>
+                            <h1>ঈদ মোবারাক</h1>
+                            <h5 class="fw-bold">সবাইকে পবিত্র ঈদুল আযহার শুভেচ্ছা...</h5>
                             <button class="haat-btn-buy-now" title="ঈদ উপহার পেতে এখানে কিল্ক করুন">ঈদ উপহার</button>
                         </div>
                         <div class="col-lg-6">
@@ -200,32 +273,36 @@
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6 col-12">
                     <a href="#cow" class="haat-a">
-                        <div class="p-3 border bg-primary d-flex align-items-center justify-content-evenly rounded-3">
-                            <h1 class="text-white">গরু</h1>
+                        <div
+                            class="p-3 border border-5 border-success d-flex align-items-center justify-content-evenly rounded-3">
+                            <h2 class="text-success fs-1 fw-bolder">গরু</h2>
                             <img src="images/cows/cow-2.png" alt="Cow">
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-6 col-12">
                     <a href="#goat" class="haat-a">
-                        <div class="p-3 border bg-success d-flex align-items-center justify-content-evenly rounded-3">
-                            <h1 class="text-white">ছাগল</h1>
+                        <div
+                            class="p-3 border border-5 border-success d-flex align-items-center justify-content-evenly rounded-3">
+                            <h2 class="text-success fs-1 fw-bolder">ছাগল</h2>
                             <img src="images/goats/goat-2.png" alt="Gaot">
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-6 col-12">
                     <a href="#camel" class="haat-a">
-                        <div class="p-3 border bg-success d-flex align-items-center justify-content-evenly rounded-3">
-                            <h1 class="text-white">উট</h1>
+                        <div
+                            class="p-3 border border-5 border-success d-flex align-items-center justify-content-evenly rounded-3">
+                            <h2 class="text-success fs-1 fw-bolder">উট</h2>
                             <img src="images/camels/camel-1.png" alt="Camel">
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-6 col-12">
                     <a href="#camel" class="haat-a">
-                        <div class="p-3 border bg-dark d-flex align-items-center justify-content-evenly rounded-3">
-                            <h1 class="text-white">ভেড়া</h1>
+                        <div
+                            class="p-3 border border-5 border-success d-flex align-items-center justify-content-evenly rounded-3">
+                            <h2 class="text-success fs-1 fw-bolder">ভেড়া</h2>
                             <img src="images/sheep/sheep-4.png" alt="Camel">
                         </div>
                     </a>
@@ -238,84 +315,84 @@
         <section class="container" id="cow">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 py-5">
                 <div class="col">
-                    <div class="card border-0 shadow-lg h-100">
-                        <img src="images/cows/cow-3.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
+                    <div class="card border-0 shadow-lg h-auto ">
+                        <img src="images/cows/cow-3.png" class="card-img-top px-4 pt-3 img-animation" alt="cow"> 
                         <div class="card-body mt-1">
                             <h4 class="card-title">অস্ট্রেলিয়ান গরু</h4>
                             <h5 class="card-text text-danger fw-bold">৭০০০০৳</h5>
                             <a href="#" class="text-success haat-a fw-bold">বিস্তারিত দেখুন...</a>
                         </div>
-                        <div class="m-3 d-flex justify-content-evenly">
+                        <div class="pt-0 px-3 pb-3">
                             <button class="haat-btn-buy-now">কার্টে যুক্ত করুন</button>
                             <button class="haat-btn-buy-now">এখনই কিনুন</button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-lg h-100">
+                    <div class="card border-0 shadow-lg h-auto">
                         <img src="images/cows/cow-4.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">ইন্ডিয়ান গরু</h4>
                             <h5 class="card-text text-danger fw-bold">৮৫০০০৳</h5>
                             <a href="#" class="text-success haat-a fw-bold">বিস্তারিত দেখুন...</a>
                         </div>
-                        <div class="m-3 d-flex justify-content-evenly">
+                        <div class="pt-0 px-3 pb-3">
                             <button class="haat-btn-buy-now">কার্টে যুক্ত করুন</button>
                             <button class="haat-btn-buy-now">এখনই কিনুন</button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-lg h-100">
+                    <div class="card border-0 shadow-lg h-auto">
                         <img src="images/cows/cow-5.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">অস্ট্রেলিয়ান গরু</h4>
                             <h5 class="card-text text-danger fw-bold">৬৯০০০৳</h5>
                             <a href="#" class="text-success haat-a fw-bold">বিস্তারিত দেখুন...</a>
                         </div>
-                        <div class="m-3 d-flex justify-content-evenly">
+                        <div class="pt-0 px-3 pb-3">
                             <button class="haat-btn-buy-now">কার্টে যুক্ত করুন</button>
                             <button class="haat-btn-buy-now">এখনই কিনুন</button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-lg h-100">
+                    <div class="card border-0 shadow-lg h-auto">
                         <img src="images/cows/cow-6.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">দেশী গরু</h4>
                             <h5 class="card-text text-danger fw-bold">৬২০০০৳</h5>
                             <a href="#" class="text-success haat-a fw-bold">বিস্তারিত দেখুন...</a>
                         </div>
-                        <div class="m-3 d-flex justify-content-evenly">
+                        <div class="pt-0 px-3 pb-3">
                             <button class="haat-btn-buy-now">কার্টে যুক্ত করুন</button>
                             <button class="haat-btn-buy-now">এখনই কিনুন</button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-lg h-100">
+                    <div class="card border-0 shadow-lg h-auto">
                         <img src="images/cows/cow-7.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">অস্ট্রেলিয়ান গরু</h4>
                             <h5 class="card-text text-danger fw-bold">৭৭০০০৳</h5>
                             <a href="#" class="text-success haat-a fw-bold">বিস্তারিত দেখুন...</a>
                         </div>
-                        <div class="m-3 d-flex justify-content-evenly">
+                        <div class="pt-0 px-3 pb-3">
                             <button class="haat-btn-buy-now">কার্টে যুক্ত করুন</button>
                             <button class="haat-btn-buy-now">এখনই কিনুন</button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-lg h-100">
+                    <div class="card border-0 shadow-lg h-auto">
                         <img src="images/cows/cow-8.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">ইন্ডিয়ান গরু</h4>
                             <h5 class="card-text text-danger fw-bold">৭৬০০০৳</h5>
                             <a href="#" class="text-success haat-a fw-bold">বিস্তারিত দেখুন...</a>
                         </div>
-                        <div class="m-3 d-flex justify-content-evenly">
+                        <div class="pt-0 px-3 pb-3">
                             <button class="haat-btn-buy-now">কার্টে যুক্ত করুন</button>
                             <button class="haat-btn-buy-now">এখনই কিনুন</button>
                         </div>
@@ -329,84 +406,84 @@
         <section class="container" id="goat">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 py-5">
                 <div class="col">
-                    <div class="card border-0 shadow-lg h-100">
+                    <div class="card border-0 shadow-lg h-auto">
                         <img src="images/goats/goat-6.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">দেশি ছাগল</h4>
                             <h5 class="card-text text-danger fw-bold">১৮০০০৳</h5>
                             <a href="#" class="text-success haat-a fw-bold">বিস্তারিত দেখুন...</a>
                         </div>
-                        <div class="m-3 d-flex justify-content-evenly">
+                        <div class="pt-0 px-3 pb-3">
                             <button class="haat-btn-buy-now">কার্টে যুক্ত করুন</button>
                             <button class="haat-btn-buy-now">এখনই কিনুন</button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-lg h-100">
+                    <div class="card border-0 shadow-lg h-auto">
                         <img src="images/goats/goat-5.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">রাম ছাগল</h4>
                             <h5 class="card-text text-danger fw-bold">১৬০০০৳</h5>
                             <a href="#" class="text-success haat-a fw-bold">বিস্তারিত দেখুন...</a>
                         </div>
-                        <div class="m-3 d-flex justify-content-evenly">
+                        <div class="pt-0 px-3 pb-3">
                             <button class="haat-btn-buy-now">কার্টে যুক্ত করুন</button>
                             <button class="haat-btn-buy-now">এখনই কিনুন</button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-lg h-100">
+                    <div class="card border-0 shadow-lg h-auto">
                         <img src="images/goats/goat-4.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">দেশি ছাগল</h4>
                             <h5 class="card-text text-danger fw-bold">১৪৫০০৳</h5>
                             <a href="#" class="text-success haat-a fw-bold">বিস্তারিত দেখুন...</a>
                         </div>
-                        <div class="m-3 d-flex justify-content-evenly">
+                        <div class="pt-0 px-3 pb-3">
                             <button class="haat-btn-buy-now">কার্টে যুক্ত করুন</button>
                             <button class="haat-btn-buy-now">এখনই কিনুন</button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-lg h-100">
+                    <div class="card border-0 shadow-lg h-auto">
                         <img src="images/goats/goat-3.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">দেশী ছাগল</h4>
                             <h5 class="card-text text-danger fw-bold">১২০০০৳</h5>
                             <a href="#" class="text-success haat-a fw-bold">বিস্তারিত দেখুন...</a>
                         </div>
-                        <div class="m-3 d-flex justify-content-evenly">
+                        <div class="pt-0 px-3 pb-3">
                             <button class="haat-btn-buy-now">কার্টে যুক্ত করুন</button>
                             <button class="haat-btn-buy-now">এখনই কিনুন</button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-lg h-100">
+                    <div class="card border-0 shadow-lg h-auto">
                         <img src="images/goats/goat-8.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">রাম ছাগল</h4>
                             <h5 class="card-text text-danger fw-bold">১০০০০৳</h5>
                             <a href="#" class="text-success haat-a fw-bold">বিস্তারিত দেখুন...</a>
                         </div>
-                        <div class="m-3 d-flex justify-content-evenly">
+                        <div class="pt-0 px-3 pb-3">
                             <button class="haat-btn-buy-now">কার্টে যুক্ত করুন</button>
                             <button class="haat-btn-buy-now">এখনই কিনুন</button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-lg h-100">
+                    <div class="card border-0 shadow-lg h-auto">
                         <img src="images/goats/goat-7.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">রাম ছাগল</h4>
                             <h5 class="card-text text-danger fw-bold">১৭০০০৳</h5>
                             <a href="#" class="text-success haat-a fw-bold">বিস্তারিত দেখুন...</a>
                         </div>
-                        <div class="m-3 d-flex justify-content-evenly">
+                        <div class="pt-0 px-3 pb-3">
                             <button class="haat-btn-buy-now">কার্টে যুক্ত করুন</button>
                             <button class="haat-btn-buy-now">এখনই কিনুন</button>
                         </div>
@@ -420,84 +497,84 @@
         <section class="container" id="camel">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 py-5">
                 <div class="col">
-                    <div class="card border-0 shadow-lg h-100">
+                    <div class="card border-0 shadow-lg h-auto">
                         <img src="images/camels/camel-3.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">এরাবিয়ান উট</h4>
                             <h5 class="card-text text-danger fw-bold">১৭৫০০০০৳</h5>
                             <a href="#" class="text-success haat-a fw-bold">বিস্তারিত দেখুন...</a>
                         </div>
-                        <div class="m-3 d-flex justify-content-evenly">
+                        <div class="pt-0 px-3 pb-3">
                             <button class="haat-btn-buy-now">কার্টে যুক্ত করুন</button>
                             <button class="haat-btn-buy-now">এখনই কিনুন</button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-lg h-100">
+                    <div class="card border-0 shadow-lg h-auto">
                         <img src="images/camels/camel-4.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">এরাবিয়ান উট</h4>
                             <h5 class="card-text text-danger fw-bold">১৬৯০০০০৳</h5>
                             <a href="#" class="text-success haat-a fw-bold">বিস্তারিত দেখুন...</a>
                         </div>
-                        <div class="m-3 d-flex justify-content-evenly">
+                        <div class="pt-0 px-3 pb-3">
                             <button class="haat-btn-buy-now">কার্টে যুক্ত করুন</button>
                             <button class="haat-btn-buy-now">এখনই কিনুন</button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-lg h-100">
+                    <div class="card border-0 shadow-lg h-auto">
                         <img src="images/camels/camel-5.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">ইন্ডিয়ান উট</h4>
                             <h5 class="card-text text-danger fw-bold">১৩৫০০০০৳</h5>
                             <a href="#" class="text-success haat-a fw-bold">বিস্তারিত দেখুন...</a>
                         </div>
-                        <div class="m-3 d-flex justify-content-evenly">
+                        <div class="pt-0 px-3 pb-3">
                             <button class="haat-btn-buy-now">কার্টে যুক্ত করুন</button>
                             <button class="haat-btn-buy-now">এখনই কিনুন</button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-lg h-100">
+                    <div class="card border-0 shadow-lg h-auto">
                         <img src="images/camels/camel-6.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">সৌদি উট</h4>
                             <h5 class="card-text text-danger fw-bold">১৬৫০০০০৳</h5>
                             <a href="#" class="text-success haat-a fw-bold">বিস্তারিত দেখুন...</a>
                         </div>
-                        <div class="m-3 d-flex justify-content-evenly">
+                        <div class="pt-0 px-3 pb-3">
                             <button class="haat-btn-buy-now">কার্টে যুক্ত করুন</button>
                             <button class="haat-btn-buy-now">এখনই কিনুন</button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-lg h-100">
+                    <div class="card border-0 shadow-lg h-auto">
                         <img src="images/camels/camel-2.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">ডুবাই উট</h4>
-                            <h5 class="card-text text-danger fw-bold">১২০০০০৳</h5>
+                            <h5 class="card-text text-danger fw-bold">২২০০০০০৳</h5>
                             <a href="#" class="text-success haat-a fw-bold">বিস্তারিত দেখুন...</a>
                         </div>
-                        <div class="m-3 d-flex justify-content-evenly">
+                        <div class="pt-0 px-3 pb-3">
                             <button class="haat-btn-buy-now">কার্টে যুক্ত করুন</button>
                             <button class="haat-btn-buy-now">এখনই কিনুন</button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-lg h-100">
+                    <div class="card border-0 shadow-lg h-auto">
                         <img src="images/camels/camel-7.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">ইন্ডিয়ান উট</h4>
-                            <h5 class="card-text text-danger fw-bold">১৭০০০০৳</h5>
+                            <h5 class="card-text text-danger fw-bold">১৭০০০০০৳</h5>
                             <a href="#" class="text-success haat-a fw-bold">বিস্তারিত দেখুন...</a>
                         </div>
-                        <div class="m-3 d-flex justify-content-evenly">
+                        <div class="pt-0 px-3 pb-3">
                             <button class="haat-btn-buy-now">কার্টে যুক্ত করুন</button>
                             <button class="haat-btn-buy-now">এখনই কিনুন</button>
                         </div>
@@ -511,42 +588,43 @@
         <section class="container" id="sheep">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 py-5">
                 <div class="col">
-                    <div class="card border-0 shadow-lg h-100">
-                        <img src="images/sheep/sheep-1.png" class="card-img-top px-4 pt-3 img-animation" alt="sheep">
+                    <div class="card border-0 shadow-lg h-auto">
+                        <img src="images/sheep/sheep-1.png" class="card-img-top px-4 pt-3 my-4 img-animation" alt="sheep">
                         <div class="card-body mt-1">
                             <h4 class="card-title">দেশি ভেড়া</h4>
                             <h5 class="card-text text-danger fw-bold">১২০০০৳</h5>
                             <a href="#" class="text-success haat-a fw-bold">বিস্তারিত দেখুন...</a>
                         </div>
-                        <div class="m-3 d-flex justify-content-evenly">
+                        <div class="pt-0 px-3 pb-3">
                             <button class="haat-btn-buy-now">কার্টে যুক্ত করুন</button>
                             <button class="haat-btn-buy-now">এখনই কিনুন</button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-lg h-100">
+                    <div class="card border-0 shadow-lg h-auto">
                         <img src="images/sheep/sheep-2.png" class="card-img-top px-4 pt-3 img-animation" alt="sheep">
                         <div class="card-body mt-1">
                             <h4 class="card-title">দেশি ভেড়া</h4>
                             <h5 class="card-text text-danger fw-bold">১৩০০০৳</h5>
                             <a href="#" class="text-success haat-a fw-bold">বিস্তারিত দেখুন...</a>
                         </div>
-                        <div class="m-3 d-flex justify-content-evenly">
+                        <div class="pt-0 px-3 pb-3">
                             <button class="haat-btn-buy-now">কার্টে যুক্ত করুন</button>
                             <button class="haat-btn-buy-now">এখনই কিনুন</button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-lg h-100">
-                        <img src="images/sheep/sheep-3.png" class="card-img-top px-4 pt-3 img-animation" alt="sheep" height="278">
+                    <div class="card border-0 shadow-lg h-auto">
+                        <img src="images/sheep/sheep-3.png" class="card-img-top px-4 pt-3 img-animation" alt="sheep"
+                            height="278">
                         <div class="card-body mt-1">
                             <h4 class="card-title">দেশি ভেড়া</h4>
                             <h5 class="card-text text-danger fw-bold">১৬৫০০৳</h5>
                             <a href="#" class="text-success haat-a fw-bold">বিস্তারিত দেখুন...</a>
                         </div>
-                        <div class="m-3 d-flex justify-content-evenly">
+                        <div class="pt-0 px-3 pb-3">
                             <button class="haat-btn-buy-now">কার্টে যুক্ত করুন</button>
                             <button class="haat-btn-buy-now">এখনই কিনুন</button>
                         </div>
@@ -558,13 +636,14 @@
 
         <!-- Butler Section Start -->
         <section class="container" id="butler">
-            <div class="row g-4 p-5">
+            <div class="row g-4 pt-2 pb-5">
                 <h2 class="text-center fw-bold">কসাই লাগবে?</h2>
-                <h4 class="text-center fw-bold"><a href="index.html" class="text-decoration-none text-success">ডিজিটাল হাটে</a> পেয়ে যাবেন মিনিটেই!</h4>
-                <hr>
+                <h4 class="text-center fw-bold"><a href="index.html" class="text-decoration-none text-success">ডিজিটাল
+                        হাটে</a> পেয়ে যাবেন মিনিটেই!</h4>
+                <hr class="custom-hr">
                 <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card border-0 shadow-lg h-100">
-                        <img src="images/butler/butler-1.png" class="card-img-top px-4 pt-3 img-animation" alt="sheep">
+                    <div class="card border-0 shadow-lg h-auto">
+                        <img src="images/butler/butler-1.png" class="card-img-top px-4 pt-3" alt="butler">
                         <div class="card-body mt-1 text-center">
                             <h4 class="card-title">সাইদুল ইসলাম</h4>
                             <h5 class="card-text text-danger fw-bold"></h5>
@@ -576,8 +655,8 @@
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card border-0 shadow-lg h-100">
-                        <img src="images/butler/butler-2.png" class="card-img-top px-4 pt-3 img-animation" alt="sheep">
+                    <div class="card border-0 shadow-lg h-auto">
+                        <img src="images/butler/butler-2.png" class="card-img-top px-4 pt-3" alt="butler">
                         <div class="card-body mt-1 text-center">
                             <h4 class="card-title">সাইদুল ইসলাম</h4>
                             <h5 class="card-text text-danger fw-bold"></h5>
@@ -589,8 +668,8 @@
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card border-0 shadow-lg h-100">
-                        <img src="images/butler/butler-3.png" class="card-img-top px-4 pt-3 img-animation" alt="sheep">
+                    <div class="card border-0 shadow-lg h-auto">
+                        <img src="images/butler/butler-3.png" class="card-img-top px-4 pt-3" alt="butler">
                         <div class="card-body mt-1 text-center">
                             <h4 class="card-title">সাইদুল ইসলাম</h4>
                             <h5 class="card-text text-danger fw-bold"></h5>
@@ -602,8 +681,8 @@
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card border-0 shadow-lg h-100">
-                        <img src="images/butler/butler-4.png" class="card-img-top px-4 pt-3 img-animation" alt="sheep">
+                    <div class="card border-0 shadow-lg h-auto">
+                        <img src="images/butler/butler-4.png" class="card-img-top px-4 pt-3" alt="butler">
                         <div class="card-body mt-1 text-center">
                             <h4 class="card-title">সাইদুল ইসলাম</h4>
                             <h5 class="card-text text-danger fw-bold"></h5>
@@ -614,58 +693,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card border-0 shadow-lg h-100">
-                        <img src="images/butler/butler-5.png" class="card-img-top px-4 pt-3 img-animation" alt="sheep">
-                        <div class="card-body mt-1 text-center">
-                            <h4 class="card-title">সাইদুল ইসলাম</h4>
-                            <h5 class="card-text text-danger fw-bold"></h5>
-                            <a href="#" class="text-success haat-a fw-bold">বিস্তারিত</a>
-                        </div>
-                        <div class="mx-3 mb-3 d-flex justify-content-evenly">
-                            <button class="haat-btn-buy-now">হায়ার করুন</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card border-0 shadow-lg h-100">
-                        <img src="images/butler/butler-6.png" class="card-img-top px-4 pt-3 img-animation" alt="sheep">
-                        <div class="card-body mt-1 text-center">
-                            <h4 class="card-title">সাইদুল ইসলাম</h4>
-                            <h5 class="card-text text-danger fw-bold"></h5>
-                            <a href="#" class="text-success haat-a fw-bold">বিস্তারিত</a>
-                        </div>
-                        <div class="mx-3 mb-3 d-flex justify-content-evenly">
-                            <button class="haat-btn-buy-now">হায়ার করুন</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card border-0 shadow-lg h-100">
-                        <img src="images/butler/butler-7.png" class="card-img-top px-4 pt-3 img-animation" alt="sheep">
-                        <div class="card-body mt-1 text-center">
-                            <h4 class="card-title">সাইদুল ইসলাম</h4>
-                            <h5 class="card-text text-danger fw-bold"></h5>
-                            <a href="#" class="text-success haat-a fw-bold">বিস্তারিত</a>
-                        </div>
-                        <div class="mx-3 mb-3 d-flex justify-content-evenly">
-                            <button class="haat-btn-buy-now">হায়ার করুন</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card border-0 shadow-lg h-100">
-                        <img src="images/butler/butler-8.png" class="card-img-top px-4 pt-3 img-animation" alt="sheep">
-                        <div class="card-body mt-1 text-center">
-                            <h4 class="card-title">সাইদুল ইসলাম</h4>
-                            <h5 class="card-text text-danger fw-bold"></h5>
-                            <a href="#" class="text-success haat-a fw-bold">বিস্তারিত</a>
-                        </div>
-                        <div class="mx-3 mb-3 d-flex justify-content-evenly">
-                            <button class="haat-btn-buy-now">হায়ার করুন</button>
-                        </div>
-                    </div>
-                </div>
+                <span class="p-2">
+                    <i class="fas fa-angle-down fs-1 d-flex justify-content-center text-success" title="আরও দেখুন!"></i>
+                </span>
             </div>
         </section>
         <!-- Butler Section End -->
@@ -674,12 +704,15 @@
         <section class="container" id="contact">
             <div class="row d-flex justify-content-center">
                 <div class="col-12 col-md-5 border-0 shadow pt-3 pb-2">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14602.700311872784!2d90.34510366942551!3d23.794582086915813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0e96fce29dd%3A0x6ccd9e51aba9e64d!2sMirpur-1%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1627472359467!5m2!1sen!2sbd" width="450" height="390" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14602.700311872784!2d90.34510366942551!3d23.794582086915813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0e96fce29dd%3A0x6ccd9e51aba9e64d!2sMirpur-1%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1627472359467!5m2!1sen!2sbd"
+                        width="450" height="390" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                 <div class="col-12 col-md-6 border-0 shadow ms-4 p-3">
                     <h3 class="pt-3 px-3">অভিযোগ বা পরামর্শ থাকলে আমাদেরকে জানান</h3>
                     <form class="pt-3 px-3">
-                        <input class="form-control mb-3" id="exampleFormControlInput1" type="email" placeholder="ইমেইল আইডি লেখুন">
+                        <input class="form-control mb-3" id="exampleFormControlInput1" type="email"
+                            placeholder="ইমেইল আইডি লেখুন">
                         <select class="form-select mb-3 fw-bold" aria-label="Problem Select">
                             <option selected class="btn-success">সমস্যা নির্বাচন করুন</option>
                             <option value="1" class="btn-success">অভিযোগ</option>
@@ -690,16 +723,6 @@
                         <button class="btn btn-success" type="submit">সেন্ড করুন</button>
                     </form>
                 </div>
-                <div class="col-12 col-lg-12 d-flex flex-column justify-content-center align-items-center mb-1">
-                    <div class="fs-2 mt-4 shadow-lg px-4 py-2 border border-4 border-success rounded-pill">
-                        <a href="https://www.facebook.com/hosseniftakher" class="text-success text-decoration-none"><i class="fab fa-facebook mx-1"></i></a>
-                        <a href="https://www.instagram.com/hossen_iftakher/" class="text-success text-decoration-none"><i class="fab fa-instagram mx-1"></i></a>
-                        <a href="https://twitter.com/iftakher_hossen" class="text-success text-decoration-none"><i class="fab fa-twitter mx-1"></i></a>
-                        <a href="https://www.linkedin.com/in/iftakher-hossen/" class="text-success text-decoration-none"><i class="fab fa-linkedin-in mx-1"></i></a>
-                        <a href="mailto:iftakher.one@gmail.com" class="text-success text-decoration-none"><i class="far fa-envelope"></i></a><br>
-                        <div class="text-center fs-6 fw-bold py-2"><i class="fas fa-mobile-alt text-success"></i> +৮৮০৯৬৩৮১৭৯৪৩০</div>
-                    </div>
-                </div>
             </div>
         </section>
         <!-- Contact Section End -->
@@ -708,13 +731,51 @@
 
     <!-- Footer Section Start -->
     <footer class="mt-3">
-        <p class="mt-2 text-center">©২০২১, ডিজিটাল হাট, সর্বাধিকার সংরক্ষিত, <a href="https://iftakherhossen.github.io/portfolio/index.html" class="text-decoration-none text-success">ইফতেখার হোসেন</a>, বাংলাদেশ।</p>
+        <div class="container py-5">
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-md-6 col-lg-3 py-auto d-flex flex-column align-items-start">
+                    <a href="#" class="fs-6 text-decoration-none text-success my-1">আজকের বাজার দর</a>
+                    <a href="#" class="fs-6 text-decoration-none text-success my-1">আমাদের শর্তসমুহ</a>
+                    <a href="#" class="fs-6 text-decoration-none text-success my-1">কিভাবে পেইমেন্ট করবেন</a>
+                    <a href="#" class="fs-6 text-decoration-none text-success my-1">রিফান্ড পলিসি</a>
+                    <a href="#" class="fs-6 text-decoration-none text-success my-1">ডেলিভারী সিস্টেম</a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 py-auto">
+                    <div class="d-flex flex-column mb-4">
+                        <h5 class="fw-bold">হেল্পলাইনঃ সকাল ৮টা<br> থেকে রাত ৮টা পর্যন্ত</h5>
+                        <a href="tel:+8809638179430" class="text-success text-decoration-none fs-3"><i class="fas fa-phone-alt text-success fs-3 mx-1"></i> টোল ফ্রী</a>
+                    </div>
+                    <div class="d-flex">
+                        <a href="https://www.facebook.com/hosseniftakher" class="text-success"><i class="fab fa-facebook mx-1 fs-4"></i></a>
+                        <a href="https://www.instagram.com/hossen_iftakher/" class="text-success"><i class="fab fa-instagram mx-1 fs-4"></i></a>
+                        <a href="https://twitter.com/iftakher_hossen" class="text-success"><i class="fab fa-twitter mx-1 fs-4"></i></a>
+                        <a href="https://www.linkedin.com/in/iftakher-hossen/" class="text-success"><i
+                                class="fab fa-linkedin-in mx-1 fs-4"></i></a>
+                        <a href="https://www.linkedin.com/in/iftakher-hossen/" class="text-success"><i
+                                class="fab fa-youtube mx-1 fs-4"></i></a>
+                        <a href="mailto:iftakher.one@gmail.com" class="text-success"><i class="far fa-envelope mx-1 fs-4"></i></a>
+                    </div> 
+                </div>
+                <div class="col-12 col-md-12 col-lg-3 py-auto d-flex flex-column my-2">
+                    <h5 class="fw-bold">ডিজিটাল হাট</h5>
+                    <img src="images/play-store.jpg" alt="Play Store" width="150px" class="my-1">
+                    <img src="images/app-store.jpg" alt="App Store" width="150px" class="my-1">                  
+                </div>
+                <div class="col-12 col-md-12 col-lg-3 py-auto">
+                    <img src="images/ssl-commerce.png" alt="SSL" class="float-end">
+                </div>
+            </div>
+        </div>
+
+        <p class="mt-2 text-center">© ২০২১, ডিজিটাল হাট, সর্বাধিকার সংরক্ষিত, <a href="https://iftakherhossen.github.io/portfolio/index.html" class="text-decoration-none text-success">ইফতেখার হোসেন</a>, বাংলাদেশ।</p>
     </footer>
     <!-- Footer Section End -->
 
 
     <!-- Bootstrap JS Bundle Link -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
     <!-- Font Awesome Link -->
     <script src="https://kit.fontawesome.com/f7d5949a35.js" crossorigin="anonymous"></script>
