@@ -68,3 +68,29 @@ h4 {
 .custom-hr {
     color: #ff3434;
 }
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #c4f5d4;
+    color: white;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 4px;
+    color: green;
+}
+  
+#myBtn:hover {
+    background-color: green;
+    color: white;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
