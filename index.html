@@ -15,7 +15,8 @@
     <title>ডিজিটাল হাট - স্বাগতম</title>
 </head>
 
-<body oncontextmenu="return false;">
+<body>
+    <!-- oncontextmenu="return false;" -->
 
     <!-- Header Section Start -->
     <header>
@@ -60,34 +61,45 @@
                     <form class="d-flex">
                         <input class="form-control me-2 br-25" type="search" placeholder="এখানে খুজুন..."
                             aria-label="Search" style="width:320px;">
-                        <button class="btn btn-outline-success ms-n1 br-25" type="submit"><i
-                                class="fas fa-search"></i></button>
+                        <button class="btn btn-outline-success ms-n1 br-25" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
                     </form>
 
                     <!-- Cart Section Start -->
                     <!-- Button trigger modal -->
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <i class="fas fa-shopping-cart p-1 custom" style="font-size:30px; color:green;"
-                            title="কার্ট"></i>
+                        <i class="fas fa-user-circle custom" style="font-size:35px; color:green;" title="কার্ট"></i>
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="exampleModal" tabindex="-1" data-bs-backdrop="static"
+                        data-bs-keyboard="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title fw-bold" id="staticBackdropLabel">কার্ট - লগইন/সাইন ইন</h5>
+                                    <h5 class="modal-title fw-bold" id="staticBackdropLabel">লগইন/সাইন ইন</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <div class="p-2 d-flex flex-column align-items-center">
                                         <form class="container-fluid">
-                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ইমেইল/নাম্বার"><br>
-                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="পাসওয়ার্ড"><br>
-                                            <div class="d-flex justify-content-center">
+                                            <div class="w-100">
+                                                <input type="email" class="form-control" required
+                                                    id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                    placeholder="ইমেইল/নাম্বার"><br>
+                                                <input type="password" class="form-control mb-0" required
+                                                    id="exampleInputPassword1" placeholder="পাসওয়ার্ড">
+                                                <div class="text-end">
+                                                    <small><a href="#" class="text-danger">পাসওয়ার্ড ভুলে
+                                                            গেছেন?</a></small>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-center mt-3">
                                                 <button type="submit" class="btn btn-success mx-2">লগইন</button>
-                                                <button type="submit" class="btn btn-success mx-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">সাইন ইন
+                                                <button type="submit" class="btn btn-success mx-2"
+                                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">সাইন ইন
                                                 </button>
                                             </div>
                                         </form>
@@ -96,10 +108,12 @@
                                 <div class="modal-footer">
                                     <div class="d-flex justify-content-center">
                                         <a href="#" class="haat-a">
-                                            <div class="bg-success p-2 px-4 mx-1 text-white br-25 fw-light"><i class="fab fa-google"></i> &nbsp সাইন ইন উইথ গুগল</div>
+                                            <div class="bg-success p-2 px-4 mx-1 text-white br-25 fw-light"><i
+                                                    class="fab fa-google"></i> &nbsp সাইন ইন উইথ গুগল</div>
                                         </a>
                                         <a href="#" class="haat-a">
-                                            <div class="bg-success p-2 px-4 mx-1 text-white br-25 fw-light"><i class="far fa-envelope"></i> &nbsp সাইন ইন উইথ ইমেইল</div>
+                                            <div class="bg-success p-2 px-4 mx-1 text-white br-25 fw-light"><i
+                                                    class="far fa-envelope"></i> &nbsp সাইন ইন উইথ ইমেইল</div>
                                         </a>
                                     </div>
                                 </div>
@@ -109,68 +123,42 @@
                     <!-- Cart Section End -->
 
                     <!-- Login Button -->
-                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                        <i class="fas fa-user-circle p-1 custom" style="font-size:35px; color:green;"
-                        title="লগইন/সাইন ইন"></i>
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight">
+                        <i class="fas fa-shopping-cart custom" style="font-size:32px; color:green;"
+                            title="লগইন/সাইন ইন"></i>
                     </button>
-                    
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
                         <div class="offcanvas-header pb-0">
-                            <h4 id="offcanvasRightLabel" class="fw-bold">লগইন/সাইন ইন</h4>
-                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            <h3 id="offcanvasRightLabel" class="fw-bold ms-2 text-success">কার্ট</h3>
+                            <button type="button" class="btn-close text-reset mb-1 text-success"
+                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
+                        <hr class="mb-2 text-danger hr-height">
                         <div class="offcanvas-body">
-                            <div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                            aria-expanded="true" aria-controls="collapseOne">
-                                            লগইন
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                        data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <form class="container-fluid">
-                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                                    placeholder="ইমেইল/নাম্বার" required><br>
-                                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="পাসওয়ার্ড" required>
-                                                <small><a href="#" class="text-danger float-end">পাসওয়ার্ড ভুলে গেছেন?</a></small>
-                                                <br>
-                                                <button type="submit" class="btn btn-success my-2">লগইন</button>
-                                            </form>
+                            <div class="p-2">
+                                <div class="p-2 pb-0 d-flex justify-content-between bg-light-green">
+                                    <div class="d-flex">
+                                        <div class="d-flex align-items-center w-50">
+                                            <img src="" alt="Picture" class="me-3">
+                                            <input type="number" class="w-25" min="0">
+                                        </div>
+                                        <div class="w-50">
+                                            <h4 class="w-50">Name</h4>
+                                            <h5 class="fw-bold">Price</h5>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                            aria-expanded="true" aria-controls="collapseTwo">
-                                            সাইন ইন
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
-                                        data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <form class="container-fluid">
-                                                <input type="text" class="form-control fw-bold" placeholder="নাম *" aria-label="Name" aria-describedby="basic-addon1" required><br>
-                                                <input type="email" class="form-control fw-bold" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ইমেইল *" required><br>
-                                                <input type="tel" class="form-control fw-bold" placeholder="নাম্বার *" aria-label="Number" aria-describedby="basic-addon1" required><br>
-                                                <input type="password" class="form-control fw-bold" id="exampleInputPassword1" placeholder="পাসওয়ার্ড *" required><br>
-                                                <input type="password" class="form-control fw-bold" id="exampleInputPassword1" placeholder="কনফার্ম পাসওয়ার্ড *" required><br>
-                                                <button type="submit" class="btn btn-success">সাইন ইন</button>
-                                            </form>
-                                        </div>
-                                    </div>
+                                    <button type="button" class="btn-close"></button>
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-center mt-3 mb-0">
-                                <a href="#" class="haat-a mx-2">
-                                    <div class="bg-success p-2 px-4 text-white fs-6 br-25 fw-light text-center"><i class="fab fa-google"></i> &nbsp গুগল</div>
-                                </a>
-                                <a href="#" class="haat-a mx-2">
-                                    <div class="bg-success p-2 px-4 text-white fs-6 br-25 fw-light text-center"><i class="far fa-envelope"></i> &nbsp ইমেইল</div>
-                                </a>
+                        </div>
+                        <div class="off-canvas-footer mt-3 mb-0">
+                            <hr class="mb-2 text-danger hr-height">
+                            <div class="d-flex px-3 py-1 justify-content-between">
+                                <h4 class="fw-bold">মোট<h4>
+                                        <h4 class="fw-bold">৳ <span id="total-price">০০</span></h4>
                             </div>
                         </div>
                     </div>
@@ -314,7 +302,7 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 py-5">
                 <div class="col">
                     <div class="card border-0 shadow-lg h-auto ">
-                        <img src="images/cows/cow-3.png" class="card-img-top px-4 pt-3 img-animation" alt="cow"> 
+                        <img src="images/cows/cow-3.png" class="card-img-top px-4 pt-3 img-animation" alt="cow">
                         <div class="card-body mt-1">
                             <h4 class="card-title">অস্ট্রেলিয়ান গরু</h4>
                             <h5 class="card-text text-danger fw-bold">৭০০০০৳</h5>
@@ -587,7 +575,8 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 py-5">
                 <div class="col">
                     <div class="card border-0 shadow-lg h-auto">
-                        <img src="images/sheep/sheep-1.png" class="card-img-top px-4 pt-3 my-4 img-animation" alt="sheep">
+                        <img src="images/sheep/sheep-1.png" class="card-img-top px-4 pt-3 my-4 img-animation"
+                            alt="sheep">
                         <div class="card-body mt-1">
                             <h4 class="card-title">দেশি ভেড়া</h4>
                             <h5 class="card-text text-danger fw-bold">১২০০০৳</h5>
@@ -741,23 +730,28 @@
                 <div class="col-12 col-md-6 col-lg-3 py-auto">
                     <div class="d-flex flex-column mb-4">
                         <h5 class="fw-bold">হেল্পলাইনঃ সকাল ৮টা<br> থেকে রাত ৮টা পর্যন্ত</h5>
-                        <a href="tel:+8809638179430" class="text-success text-decoration-none fs-3"><i class="fas fa-phone-alt text-success fs-3 mx-1"></i> টোল ফ্রী</a>
+                        <a href="tel:+8809638179430" class="text-success text-decoration-none fs-3"><i
+                                class="fas fa-phone-alt text-success fs-3 mx-1"></i> টোল ফ্রী</a>
                     </div>
                     <div class="d-flex">
-                        <a href="https://www.facebook.com/hosseniftakher" class="text-success"><i class="fab fa-facebook mx-1 fs-4"></i></a>
-                        <a href="https://www.instagram.com/hossen_iftakher/" class="text-success"><i class="fab fa-instagram mx-1 fs-4"></i></a>
-                        <a href="https://twitter.com/iftakher_hossen" class="text-success"><i class="fab fa-twitter mx-1 fs-4"></i></a>
+                        <a href="https://www.facebook.com/hosseniftakher" class="text-success"><i
+                                class="fab fa-facebook mx-1 fs-4"></i></a>
+                        <a href="https://www.instagram.com/hossen_iftakher/" class="text-success"><i
+                                class="fab fa-instagram mx-1 fs-4"></i></a>
+                        <a href="https://twitter.com/iftakher_hossen" class="text-success"><i
+                                class="fab fa-twitter mx-1 fs-4"></i></a>
                         <a href="https://www.linkedin.com/in/iftakher-hossen/" class="text-success"><i
                                 class="fab fa-linkedin-in mx-1 fs-4"></i></a>
                         <a href="https://www.linkedin.com/in/iftakher-hossen/" class="text-success"><i
                                 class="fab fa-youtube mx-1 fs-4"></i></a>
-                        <a href="mailto:iftakher.one@gmail.com" class="text-success"><i class="far fa-envelope mx-1 fs-4"></i></a>
-                    </div> 
+                        <a href="mailto:iftakher.one@gmail.com" class="text-success"><i
+                                class="far fa-envelope mx-1 fs-4"></i></a>
+                    </div>
                 </div>
                 <div class="col-12 col-md-12 col-lg-3 py-auto d-flex flex-column my-2">
                     <h5 class="fw-bolder text-success">ডিজিটাল হাট</h5>
                     <a href="#"><img src="images/play-store.jpg" alt="Play Store" width="150px" class="my-1"></a>
-                    <a href="#"><img src="images/app-store.jpg" alt="App Store" width="150px" class="my-1"></a>              
+                    <a href="#"><img src="images/app-store.jpg" alt="App Store" width="150px" class="my-1"></a>
                 </div>
                 <div class="col-12 col-md-12 col-lg-3 py-auto">
                     <img src="images/ssl-commerce.png" alt="SSL" class="float-end">
@@ -765,14 +759,19 @@
             </div>
         </div>
 
-        <p class="mt-2 text-center">© ২০২১, ডিজিটাল হাট, সর্বাধিকার সংরক্ষিত, <a href="https://iftakherhossen.github.io/portfolio/index.html" class="text-decoration-none text-success">ইফতেখার হোসেন</a>, বাংলাদেশ।</p>
+        <p class="mt-2 text-center">© ২০২১, ডিজিটাল হাট, সর্বাধিকার সংরক্ষিত, <a
+                href="https://iftakherhossen.github.io/portfolio/index.html"
+                class="text-decoration-none text-success">ইফতেখার হোসেন</a>, বাংলাদেশ।</p>
     </footer>
     <!-- Footer Section End -->
 
     <!-- Go to Top Button Start -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up fs-1"></i></button>
+    <button id="myBtn" title="Go to top"><i class="fas fa-angle-up fs-1"></i></button>
     <!-- Go to Top Button End -->
 
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
 
     <!-- Bootstrap JS Bundle Link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -781,52 +780,6 @@
 
     <!-- Font Awesome Link -->
     <script src="https://kit.fontawesome.com/f7d5949a35.js" crossorigin="anonymous"></script>
-
-    <!-- Internal JS Start -->
-    <script>
-        //Get the button
-        const mybutton = document.getElementById("myBtn");
-        
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-          } else {
-            mybutton.style.display = "none";
-          }
-        }
-        
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-
-        // To block the inspect element
-        document.onkeydown = function(e) {
-            if(event.keyCode == 123) {
-            return false;
-            }
-            else if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
-            return false;
-            }
-            else if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
-            return false;
-            }
-            else if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)){
-            return false;
-            }
-            else if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
-            return false;
-            }
-            else {
-                return false;
-            }
-        }
-    </script>    
-    <!-- Internal JS End -->
 
 </body>
 
